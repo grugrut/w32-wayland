@@ -36,7 +36,7 @@ src/dtddata.o: protocol/wayland.dtd
 if USE_HOST_SCANNER
 wayland_scanner = wayland-scanner
 else
-$(BUILT_SOURCES) : wayland-scanner
+$(BUILT_SOURCES) : wayland-scanner$(EXEEXT)
 wayland_scanner = $(top_builddir)/wayland-scanner
 endif
 
